@@ -10,8 +10,7 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-//testing
-// dsf455765876543543655
+
 public class Call_me extends AppCompatActivity {
 
     LinearLayout call,insta,msg,mail;
