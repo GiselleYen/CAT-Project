@@ -83,21 +83,23 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:background="@drawable/writing"/>
+                    android:background="@drawable/happy1"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="👓READING SECTION👓"
                     android:fontFamily="sans-serif-black"
-                    android:textColor="#000000"
-                    android:textSize="20sp"/>
+                    android:text="😆 Entertainment and Motivation 💪"
+                    android:textColor="#4A3B25"
+                    android:textSize="20sp" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Some reading doesn't hurt...."
+                    android:text="Read something that cheer you up and motivate yourself!😁"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
