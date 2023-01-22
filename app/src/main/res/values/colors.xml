@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#0252ca</color>
     <color name="colorAccent">#D81B60</color>
     <color name="blue">#0668fd</color>
+    <color name="orange">#FAF3C0</color>
     <color name="transparent">#400668fd</color>
     <color name="forTrans">#FFFFCC</color>
 </resources>
