@@ -10,7 +10,9 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-//test 1
+
+// hello test1
+// hello test2
 public class Call_me extends AppCompatActivity {
 
     LinearLayout call,insta,msg,mail;

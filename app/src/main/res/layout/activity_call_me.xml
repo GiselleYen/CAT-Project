@@ -4,177 +4,303 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Call_me">
+    tools:context=".Call_me"
+    android:background="@drawable/background">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:id="@+id/top"
-        app:layout_constraintHeight_percent="0.079"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:background="@color/blue"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.049"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:text="😊😊"
+            android:layout_height="67dp"
+            android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-light"/>
+            android:text="😊 Call me whenever you need me 😊"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
+        <!-- whole-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Why so serious?"
+                    android:layout_height="30dp"
+                    android:fontFamily="casual"
                     android:gravity="center_horizontal"
-                    android:fontFamily="sans-serif-black"
+                    android:text="Now, hit me up by different ways :)"
                     android:textColor="#000000"
-                    android:textSize="20sp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:layout_marginRight="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/call">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.7"
-                        android:background="@drawable/callme"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Gimme a call"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="😁😁😁"
-                        android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:layout_marginLeft="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/insta">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.7"
-                        android:background="@drawable/insta"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Instagram"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="⚡⚡⚡"
-                        android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="casual"
+                    android:gravity="left"
+                    android:text="Call me or text me :"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
+
+            <!-- first line -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
-                android:orientation="horizontal"
-                android:layout_marginBottom="85dp"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <!-- call phone -->
                 <LinearLayout
+                    android:id="@+id/call"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginRight="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/msg">
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="231dp"
                         android:layout_weight="0.7"
-                        android:background="@drawable/message"/>
+                        android:background="@drawable/phone" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Give me a call"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="I want to hear your beautiful voice"
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- message -->
+                <LinearLayout
+                    android:id="@+id/msg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/message" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="Leave a message"
-                        android:fontFamily="sans-serif-black"
                         android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:textSize="19sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sounds primitive"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Hope to recieve your message here  "
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
                 </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="casual"
+                    android:gravity="left"
+                    android:text="Or you can use any social media platform :"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- next line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+                <!-- email -->
                 <LinearLayout
+                    android:id="@+id/mail"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
                     android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/email" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Email me"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Email me and I will email you back"
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <!-- whatsapp -->
+                <LinearLayout
+                    android:id="@+id/whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/mail">
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="292dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/whatsapp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Whatsapp me"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="How are you? Hope you having fun "
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- next line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+                <!-- insta -->
+                <LinearLayout
+                    android:id="@+id/insta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
-                        android:background="@drawable/email"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Are you being serious right now"
-                        android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:background="@drawable/instagram" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Instagram"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Post a story of us"
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- facebook -->
+                <LinearLayout
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Facebook"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Create a post of us"
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

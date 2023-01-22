@@ -6,65 +6,199 @@
     android:layout_height="match_parent"
     tools:context=".Websites">
     <LinearLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/top"
-        app:layout_constraintHeight_percent="0.079"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/website_background"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/blue"
-        android:orientation="horizontal">
+        app:layout_constraintHeight_percent="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:text="✨WEBSITE✨"
+            android:fontFamily="sans-serif-light"
             android:gravity="center"
+            android:text="✨ YOUR FAV WEBSITE AND SONG✨"
+            android:textColor="#ffffff"
             android:textSize="17sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-light"/>
+            android:textStyle="bold" />
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/website_background2"
         app:layout_constraintTop_toBottomOf="@id/top"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical"
-        android:id="@+id/gitswebsite"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
         >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@drawable/gits"/>
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Website"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
-        <TextView
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bringfido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/bringfido"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="BringFido - Pet Travel"
+                        android:textColor="#F0E68C"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Still worried about taking your loved dog on a trip? Here  is the world's leading pet travel website for dog owners looking for the lowdown on the best hotels and restaurants that welcome pets."
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/catworld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/catworld" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Cat-World"
+                        android:textColor="#F0E68C"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="An online site for cat lovers with cat-related information on cat health, care, breeds and much more!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/netflix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/netflix" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Netflix"
+                        android:textColor="#F0E68C"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="As a TV lover, Netflix, for you always! Here is a streaming service that offers a wide variety of award-winning TV shows, movies and anime."
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="I guess these are your favourite websites"
-            android:fontFamily="sans-serif-light"
-            android:textColor="#a9a9a9"
-            android:textSize="15sp"/>
-    </LinearLayout>
-    </LinearLayout>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎤 Rolling in the Deep - Adele 🎤"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#F0E68C"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Play"
+                android:onClick="play" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Pause"
+                android:onClick="pause" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Stop"
+                android:onClick="stop" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
