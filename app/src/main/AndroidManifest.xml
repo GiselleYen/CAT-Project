@@ -22,6 +22,8 @@
             android:name=".DogWish"
             android:theme="@style/dogWish"
             android:screenOrientation="portrait"/>
+        <activity android:name=".MeWish"
+            android:screenOrientation="portrait"/>
         <activity android:name=".MinionWish"
             android:screenOrientation="portrait"/>
         <activity android:name=".Call_me"

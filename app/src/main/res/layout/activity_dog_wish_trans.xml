@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DogWishTrans"
-    android:background="@drawable/dogwish">
+    android:background="@drawable/doggypic">
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#55321c"
+        android:backgroundTint="#000000"
         android:textColor="#ffffff"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:text="Translate to Bho-Bho"
+        android:text="Back to previous page"
         android:id="@+id/topbtn"
         android:fontFamily="sans-serif-light"/>
     <ScrollView
@@ -41,69 +41,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#532900"
+                android:textColor="#000000"
                 android:textSize="17sp"
                 android:text="@string/dogWishTrans"/>
         </LinearLayout>
     </ScrollView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="#55321c"
-        android:id="@+id/music">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="😋Why read when you can listen😋"
-            android:textColor="#ffffff"
-            android:textStyle="italic"
-            android:layout_gravity="center_horizontal"/>
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/seekBar"
-            />
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="6dp"
-
-            >
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/ic_media_rew"
-                android:id="@+id/backward"
-                app:layout_constraintEnd_toStartOf="@id/play"
-                app:layout_constraintStart_toStartOf="parent"/>
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/ic_media_play"
-                android:id="@+id/play"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                />
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/ic_media_ff"
-                android:id="@+id/forward"
-                app:layout_constraintStart_toEndOf="@id/play"
-                app:layout_constraintEnd_toEndOf="parent"
-                />
-
-
-        </android.support.constraint.ConstraintLayout>
-
-    </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

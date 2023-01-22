@@ -11,6 +11,7 @@ public class Wishes extends AppCompatActivity {
     LinearLayout ll1;
     LinearLayout ll2;
     LinearLayout ll3;
+    LinearLayout ll4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ public class Wishes extends AppCompatActivity {
         ll1=(LinearLayout)findViewById(R.id.bitwa);
         ll2=(LinearLayout)findViewById(R.id.minion);
         ll3=(LinearLayout)findViewById(R.id.dog);
+        ll4=(LinearLayout)findViewById(R.id.mewish);
         ll1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +36,13 @@ public class Wishes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Wishes.this,DogWish.class));
+            }
+        });
+        ll4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Wishes.this,MeWish.class));
             }
         });
     }
