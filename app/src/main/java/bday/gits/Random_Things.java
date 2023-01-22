@@ -10,22 +10,22 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class Random_Things extends AppCompatActivity {
 
-    LinearLayout selfie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random__things);
-        selfie=(LinearLayout)findViewById(R.id.selfie);
-        selfie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                intent.putExtra("android.intent.extras.CAMERA_FACING",1);
-                startActivity(intent);
-            }
-        });
+
+        VideoView videoView = findViewById(R.id.video_view);
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.birth_video);
+
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+
+        videoView.setMediaController(mediaController);
     }
 }
