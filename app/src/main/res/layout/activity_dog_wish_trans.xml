@@ -29,7 +29,6 @@
         app:layout_constraintTop_toBottomOf="@id/topbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/music"
         android:layout_marginTop="90dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"

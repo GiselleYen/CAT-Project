@@ -61,14 +61,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="👔YOUR FAV WEBSITES👔"
+                    android:text="🔖YOUR FAV WEBSITES AND SONG🔖"
                     android:fontFamily="sans-serif-black"
                     android:textColor="#000000"
                     android:textSize="20sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Coz it's your birthday...YIPPEEEE🎁🎁🎁"
+                    android:text="🤩🤩Have a blast today while looking back to the past ones. Happy Birthday! 🎁🎁🎁"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"/>
@@ -111,18 +111,18 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:background="@drawable/dog_first"/>
+                    android:background="@drawable/video18"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="🤦‍♂RANDOM THINGS🤦‍♂️"
+                    android:text="🎂18th BIRTHDAY VIDEO📹"
                     android:fontFamily="sans-serif-black"
                     android:textColor="#000000"
                     android:textSize="20sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Putting a dog image to attract you here.😅😅"
+                    android:text="Hope this birthday song video bring you an extra smile on this wonderful day.😊😊Wish you a very Happy Birthday.🍰🍰"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"/>

@@ -89,10 +89,6 @@ public class DogWishTrans extends AppCompatActivity {
     public void getInIt()
     {
         translate=(Button)findViewById(R.id.topbtn);
-        play_button=(ImageButton)findViewById(R.id.play);
-        forward=(ImageButton)findViewById(R.id.forward);
-        backward=(ImageButton)findViewById(R.id.backward);
-        seekBar=(SeekBar)findViewById(R.id.seekBar);
         md=MediaPlayer.create(this,R.raw.dogenglish);
         seekBar.setMax(md.getDuration());
         seekBar.setClickable(false);
