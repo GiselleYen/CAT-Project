@@ -14,57 +14,84 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/blue"
+        android:background="@drawable/video_background"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:text="🎈RANDOM🎈"
+            android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-light"/>
+            android:text="🎈HAPPY BIRTHDAY🎈"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
-    <ScrollView
+
+    <LinearLayout
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/top"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
-        <LinearLayout
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Your 18th Birthday Video"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:id="@+id/videocontent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:ignore="MissingConstraints,Suspicious0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/videocontent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical"
-                android:id="@+id/selfie"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:background="@drawable/randomgirl"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Prettiest person ever"
-                    android:fontFamily="sans-serif-black"
-                    android:textColor="#000000"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/selfie"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="#a9a9a9"
-                    android:textSize="15sp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+            android:text="✨ Prettiest person ever ✨"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selfie"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
