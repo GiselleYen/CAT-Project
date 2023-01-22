@@ -11,35 +11,29 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-// hello test1
-// hello test2
 public class Call_me extends AppCompatActivity {
 
-    LinearLayout call,insta,msg,mail;
+    LinearLayout call,msg,mail,whatsapp,insta,facebook;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call_me);
         call=(LinearLayout)findViewById(R.id.call);
-        insta=(LinearLayout)findViewById(R.id.insta);
         msg=(LinearLayout)findViewById(R.id.msg);
         mail=(LinearLayout)findViewById(R.id.mail);
+        whatsapp=(LinearLayout)findViewById(R.id.whatsapp);
+        insta=(LinearLayout)findViewById(R.id.insta);
+        facebook=(LinearLayout)findViewById(R.id.facebook);
+
+        // call phone
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                jadu();
+                jadu(); // call method named jadu()
             }
         });
-        insta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.instagram.com/"));
-                startActivity(intent);
-            }
-        });
+
+        // message
         msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +43,8 @@ public class Call_me extends AppCompatActivity {
                 startActivity(sendIntent);
             }
         });
+
+        // email function
         mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,10 +58,51 @@ public class Call_me extends AppCompatActivity {
                 startActivity(Intent.createChooser(emailIntent, "Send mail..."));
             }
         });
+
+        // whatsapp
+        whatsapp.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.whatsapp.com/"));
+                startActivity(intent);
+            }
+        });
+
+        // instagram
+        insta.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.instagram.com/"));
+                startActivity(intent);
+            }
+        });
+
+        // facebook
+        facebook.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.facebook.com/"));
+                startActivity(intent);
+            }
+        });
     }
+
+    // jadu method
     public void jadu()
     {
-        final CharSequence options[] = new CharSequence[] {"1234567890", "0123456789"};
+        final CharSequence options[] = new CharSequence[] {"Contact 1: 01123456789", "Contact 2: 0123456789"};
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setTitle("Select your option:");
@@ -97,3 +134,4 @@ public class Call_me extends AppCompatActivity {
     }
 
 }
+

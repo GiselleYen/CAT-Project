@@ -118,7 +118,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="0dp"
                     android:layout_weight="0.5"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:name="android.permission.SEND_SMS" >
+
 
                     <ImageView
                         android:layout_width="match_parent"
