@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DogWish"
-    android:background="@drawable/dogwish">
+    android:background="@drawable/dogback">
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#55321c"
+        android:backgroundTint="#00000c"
         android:textColor="#ffffff"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:text="Translate to English"
+        android:text="Let's see what she has to say"
         android:id="@+id/topbtn"
         android:fontFamily="sans-serif-light"/>
     <ScrollView
@@ -37,12 +37,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             >
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:text="@string/dogWishReal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#532900"
-                android:textSize="17sp"
-                android:text="@string/dogWishReal"/>
+                android:textSize="60sp" />
         </LinearLayout>
     </ScrollView>
 
