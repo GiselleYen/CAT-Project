@@ -38,7 +38,7 @@ public class Call_me extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-                sendIntent.putExtra("sms_body", "");
+                sendIntent.putExtra("sms_body", "default content");
                 sendIntent.setType("vnd.android-dir/mms-sms");
                 startActivity(sendIntent);
             }
