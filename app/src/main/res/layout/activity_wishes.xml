@@ -106,11 +106,13 @@
                     android:layout_marginRight="7.5dp"
                     android:orientation="vertical"
                     android:id="@+id/dog">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
-                        android:background="@drawable/doggy"/>
+                        android:background="@drawable/doggy" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
