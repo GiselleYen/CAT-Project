@@ -14,17 +14,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/blue"
+        android:background="@color/orange"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:text="💞EMOTIONS💞"
+            app:fontFamily="@font/henny_penny"
             android:gravity="center"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-light"/>
+            android:text="🤣 Jokes and Inspiration Quotes 🔖"
+            android:textColor="#5A4D46"
+            android:textSize="19sp"
+            android:textStyle="bold" />
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
@@ -46,38 +47,116 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Quotes and Short Stories"
-                    android:gravity="center_horizontal"
                     android:fontFamily="sans-serif-black"
-                    android:textColor="#000000"
-                    android:textSize="20sp"/>
+                    android:gravity="center_horizontal"
+                    android:text="🤡 Jokes 🤡"
+                    android:textColor="#EA3C82"
+                    android:textSize="28sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
                     android:text="@string/reading"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="#a9a9a9"
-                    android:textSize="15sp"/>
+                    android:textColor="#AA7587"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/boy_girl1" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="272dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/egg_jokes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="285dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/followers1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="238dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/frog" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/waves1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/palm_tree" />
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="My Favourite is"
-                    android:gravity="center_horizontal"
                     android:fontFamily="sans-serif-black"
-                    android:textColor="#000000"
-                    android:textSize="20sp"/>
+                    android:gravity="center_horizontal"
+                    android:text="💡 Inspiration Quotes 💡"
+                    android:textColor="#FF5722"
+                    android:textSize="26sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="The stars look beautiful tonight only because of a girl that cannot be seen."
                     android:fontFamily="sans-serif-light"
-                    android:textColor="#a9a9a9"
-                    android:textSize="15sp"/>
+                    android:gravity="center_horizontal"
+                    android:text="Motivate yourself along your life journey with the following motivation quotes! 💪."
+                    android:textColor="#AA924B"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,20 +175,24 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read1"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="How dare you?"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:fontFamily="@font/beth_ellen"
+                        android:text="Feel lose?"
+                        android:textColor="#212955"
+                        android:textSize="12sp"
+                        android:textStyle = "bold"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="I miss you"
+                        android:text="Recall your original aspiration!"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:textColor="#673AB7"
+                        android:textSize="12sp"
+                        android:textStyle = "bold"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -123,20 +206,23 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read2"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Isn't it?"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        app:fontFamily="@font/beth_ellen"
+                        android:text="Fear to start? 🤕"
+                        android:textColor="#473825"
+                        android:textSize="12sp"
+                        android:textStyle = "bold" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="I guess yes"
+                        android:text="Just go for it! 🚀"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:textColor="#774F1E"
+                        android:textSize="12sp"
+                        android:textStyle = "bold"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -157,20 +243,24 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read3"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="IF"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:text="Stuck in your way?"
+                        android:textColor="#336C67"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/akaya_telivigala"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Always"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Make changes!👟"
+                        android:textColor="#828168"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -184,20 +274,24 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read4"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Love"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:text="Worry about problems?"
+                        android:textColor="#3A4F7C"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/akaya_telivigala" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Love"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Just go to solve them!🏃‍♂️"
+                        android:textColor="#4DACAF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -218,20 +312,22 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read5"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Lose Yourself"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:text="Lose your opportunity?"
+                        android:textColor="#974460"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/average" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="I did"
+                        android:text="Build your own opportunity!🪟"
                         android:fontFamily="sans-serif-light"
                         android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -248,17 +344,19 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="So true"
-                        android:fontFamily="sans-serif-black"
+                        android:text="Arrogant of your success?"
+                        app:fontFamily="@font/average"
                         android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:textSize="16sp"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="😄😄"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Don't do so! 🙅‍♀️."
+                        android:textColor="#DDA1A1"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -281,20 +379,23 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read7"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Hope"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:text="Impossible to get jobs done?"
+                        android:textColor="#9A7B1C"
+                        android:textSize="13sp"
+                        app:fontFamily="@font/amiri_bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Always"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Say! I'm POSSIBLE! 🎇"
+                        android:textColor="#B39560"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -309,20 +410,23 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read8"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Everytime"
-                        android:fontFamily="sans-serif-black"
-                        android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:text="Late to start?"
+                        android:textColor="#3E736E"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/amiri_bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="It hurts"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="It's never too late to learn! 📖"
+                        android:textColor="#7DCD81"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -346,20 +450,23 @@
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/read9"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="My Muse"
-                        android:fontFamily="sans-serif-black"
+                        android:text="Lose anything?"
                         android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:textSize="18sp"
+                        app:fontFamily="@font/cardo_bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Like a Song"
                         android:fontFamily="sans-serif-light"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:text="Just get up yourself! 💯"
+                        android:textColor="#B3A078"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -377,17 +484,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Forever"
-                        android:fontFamily="sans-serif-black"
+                        android:text="Feel tired in studying?"
+                        app:fontFamily="@font/cardo_bold"
                         android:textColor="#000000"
-                        android:textSize="20sp"/>
+                        android:textSize="17sp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Still waiting"
+                        android:text="You will appreciate this quote!"
                         android:fontFamily="sans-serif-light"
                         android:textColor="#a9a9a9"
-                        android:textSize="15sp"/>
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
             </LinearLayout>

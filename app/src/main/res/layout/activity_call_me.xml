@@ -32,13 +32,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        >
-<!-- whole-->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
+        <!-- whole-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,25 +73,27 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-<!-- first line -->
+            <!-- first line -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-<!-- call phone -->
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <!-- call phone -->
                 <LinearLayout
+                    android:id="@+id/call"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginRight="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/call">
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="231dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/phone" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -100,6 +101,7 @@
                         android:text="Give me a call"
                         android:textColor="#000000"
                         android:textSize="19sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -109,7 +111,7 @@
                         android:textSize="15sp" />
                 </LinearLayout>
 
-<!-- message -->
+                <!-- message -->
                 <LinearLayout
                     android:id="@+id/msg"
                     android:layout_width="0dp"
@@ -117,11 +119,13 @@
                     android:layout_marginRight="0dp"
                     android:layout_weight="0.5"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="0.9"
                         android:background="@drawable/message" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -129,6 +133,7 @@
                         android:text="Leave a message"
                         android:textColor="#000000"
                         android:textSize="19sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -156,14 +161,14 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-<!-- next line -->
+            <!-- next line -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="8dp"
                 android:orientation="horizontal">
-<!-- email -->
+                <!-- email -->
                 <LinearLayout
                     android:id="@+id/mail"
                     android:layout_width="0dp"
@@ -171,11 +176,13 @@
                     android:layout_marginLeft="0dp"
                     android:layout_weight="0.5"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="292dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/email" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -183,6 +190,7 @@
                         android:text="Email me"
                         android:textColor="#000000"
                         android:textSize="19sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -191,7 +199,7 @@
                         android:textColor="#736363"
                         android:textSize="15sp" />
                 </LinearLayout>
-<!-- whatsapp -->
+                <!-- whatsapp -->
                 <LinearLayout
                     android:id="@+id/whatsapp"
                     android:layout_width="0dp"
@@ -199,11 +207,13 @@
                     android:layout_marginLeft="7.5dp"
                     android:layout_weight="0.5"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="292dp"
                         android:layout_weight="0.7"
                         android:background="@drawable/whatsapp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -222,71 +232,77 @@
                 </LinearLayout>
             </LinearLayout>
 
-<!-- next line -->
+            <!-- next line -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp"
                 android:orientation="horizontal">
-<!-- insta -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:layout_marginLeft="0dp"
-                android:orientation="vertical"
-                android:id="@+id/insta">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.7"
-                    android:background="@drawable/instagram"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Instagram"
-                    android:fontFamily="sans-serif-medium"
-                    android:textColor="#000000"
-                    android:textSize="19sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Post a story of us"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="#736363"
-                    android:textSize="15sp"/>
-            </LinearLayout>
-
-<!-- facebook -->
+                <!-- insta -->
                 <LinearLayout
+                    android:id="@+id/insta"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
                     android:layout_weight="0.5"
-                    android:layout_marginLeft="7.5dp"
-                    android:orientation="vertical"
-                    android:id="@+id/facebook">
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="0.7"
-                        android:background="@drawable/facebook"/>
+                        android:background="@drawable/instagram" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Facebook"
                         android:fontFamily="sans-serif-medium"
+                        android:text="Instagram"
                         android:textColor="#000000"
-                        android:textSize="19sp"/>
+                        android:textSize="19sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Create a post of us"
                         android:fontFamily="sans-serif-light"
+                        android:text="Post a story of us"
                         android:textColor="#736363"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </LinearLayout>
-        </LinearLayout>
+
+                <!-- facebook -->
+                <LinearLayout
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Facebook"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Create a post of us"
+                        android:textColor="#736363"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
