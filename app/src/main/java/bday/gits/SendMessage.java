@@ -32,3 +32,5 @@ public class SendMessage extends AppCompatActivity {
         mySmsManager.sendTextMessage(number, null, message, null, null);
     }
 }
+
+
