@@ -46,11 +46,6 @@
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:background="@drawable/website" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,7 +54,10 @@
                 android:orientation="vertical"
                 android:id="@+id/websites"
                 >
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/website"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -97,7 +95,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Read and watch something that cheer you up and motivate yourself!😁"
+                    android:text="Read something that cheer you up and motivate yourself!😁"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"
@@ -143,14 +141,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="📞LET'S HAVE SOME CHILL TALK MOMENT💕‍"
+                    android:text="📞CALL ME BY 1 2 3 I'LL BE THERE💕‍"
                     android:fontFamily="sans-serif-black"
                     android:textColor="#000000"
                     android:textSize="20sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Happy Birthday!🥳 Miss you so much, let's socialize and create a joyful moment together😆🌻✨"
+                    android:text="Let's socialize, sharing joyful moment together✨"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"/>
