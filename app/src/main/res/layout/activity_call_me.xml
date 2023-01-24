@@ -12,7 +12,7 @@
         android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/blue"
+        android:background="#98C6CC"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.049"
@@ -99,7 +99,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Give me a call"
+                        android:text="Give me a call🤙📞"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
@@ -132,7 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Leave a message"
+                        android:text="Leave a message💬"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
@@ -189,7 +189,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Email me"
+                        android:text="Email me📩"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
@@ -220,7 +220,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Whatsapp me"
+                        android:text="Whatsapp me🔔💚"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
@@ -260,7 +260,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Instagram"
+                        android:text="Instagram📷💕"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
@@ -292,7 +292,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="Facebook"
+                        android:text="Facebook📘💙"
                         android:textColor="#000000"
                         android:textSize="19sp" />
 
