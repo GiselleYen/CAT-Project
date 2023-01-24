@@ -95,7 +95,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Read something that cheer you up and motivate yourself!😁"
+                    android:text="Read and watch something that cheer you up and motivate yourself!😁"
                     android:fontFamily="sans-serif-light"
                     android:textColor="#a9a9a9"
                     android:textSize="15sp"
