@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 
 public class DogWish extends AppCompatActivity {
-
     Button translate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +24,5 @@ public class DogWish extends AppCompatActivity {
                 finish();
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        finish();
-        super.onBackPressed();
     }
 }

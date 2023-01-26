@@ -15,7 +15,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="100dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,6 +75,16 @@
                 android:textColor="#ffffff"
                 android:textSize="17sp"
                 android:text="@string/bitwawishneeche4"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:text="Play Me!"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:onClick="play"/>
+
         </LinearLayout>
     </ScrollView>
 
